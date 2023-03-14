@@ -102,10 +102,27 @@
         width: 50%;
     }
 
+    .img-plus {
+        opacity: 0;
+    }
+
     :checked ~ label .img-meme {
         width: 50%;
         transform: scale(1);
     }
+
+    :active ~ label {
+        background-color: #14b1a4;
+    }
+
+    .bayan:hover .img-plus {
+        opacity: 1;
+    } 
+
+    .bayan:hover label {
+        color: white;
+    } 
+
 
     .tab:hover .img-meme {
         width: 50%;
@@ -113,6 +130,7 @@
     } 
 
     .tab:hover .img-plus {
+        opacity: 1;
         transform: rotate(45deg);
     } 
 
